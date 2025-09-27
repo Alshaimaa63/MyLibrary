@@ -196,6 +196,7 @@ nav ul li a:hover {
     gap: 35px;
     max-width: 1200px;
     margin: auto;
+    justify-items: center;
 }
 
 .category-card {
@@ -205,6 +206,8 @@ nav ul li a:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; 
+    max-width: 300px;
 }
 
 .category-card:hover {
@@ -439,7 +442,7 @@ footer {
 
     .welcome-section,
     .about-section,
-    .categories {
+    .categories-grid {
         flex-direction: column;
         text-align: center;
     }
@@ -464,6 +467,18 @@ footer {
         margin: 2em 0 0;
     }
 
+    .categories {
+        padding: 2em 1em;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .category-card {
+        max-width: 90%; 
+    }
     .reviews {
         flex-direction: column;
         align-items: center;
