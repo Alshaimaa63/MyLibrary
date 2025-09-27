@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Books Collection</title>
+    <link rel="stylesheet" href="./css/books.css">
+</head>
+
+<body>
+    <nav class="categories">
+        <button onclick="loadBooks('history')">History</button>
+        <button onclick="loadBooks('technology')">Technology</button>
+        <button onclick="loadBooks('science')">Science</button>
+        <button onclick="loadBooks('fantasy')">Fantasy</button>
+        <button onclick="loadBooks('romance')">Romance</button>
+        <button onclick="loadBooks('mystery')">Mystery</button>
+        <button onclick="loadBooks('business')">Business</button>
+        <button onclick="loadBooks('biography')">Biography</button>
+    </nav>
+
+    <section class="books-section">
+        <header class="books-header">
+            <h1 id="category-title">Choose a Category</h1>
+            <p>Discover the timeless stories that shaped civilizations</p>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by title or author">
+            <button onclick="searchBooks()">Search</button>
+        </div>
+
+        <div class="books-grid" id="booksGrid">
+            <p>Please select a category above.</p>
+        </div>
+    </section>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

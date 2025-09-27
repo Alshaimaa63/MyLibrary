@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">MyLibrary</div>
+        <nav>
+            <ul class="head-links">
+                <li><a href="#welcome">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="welcome-section">
+        <div class="welcome-text">
+            <h1>Welcome to <span>MyLibrary</span></h1>
+            <p>Discover a world of knowledge and inspiration —
+                from timeless classics to the latest releases.</p>
+            <input type="text" placeholder="Find your book here" class="welcome-search">
+            <button>Search Book</button>
+        </div>
+        <div class="welcome-img">
+            <img src="./img/home.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-img">
+            <img src="./img/about.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Discover Our Modern Library</h2>
+            <p>
+                Our library is more than just books — it’s a hub for knowledge, learning, and creativity. With thousands
+                of resources, from academic journals to modern novels, we aim to inspire readers of all ages.
+            </p>
+            <a href="./books.html">
+                <button class="about-btn">Access to thousands of books</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="categories-text">
+            <h2 class="section-title">What will you Discover?</h2>
+            <p class="section-subtitle">
+                Explore our wide Range of Categories to find the books you love
+            </p>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card">
+                <i class="fas fa-landmark"></i>
+                <h3>History</h3>
+                <a href="./books.html"><button>Browse</button></a>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-flask"></i>
+                <h3>Science</h3>
+                <a href="./books.html"><button>Browse</button></a>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-book-open"></i>
+                <h3>Literature</h3>
+                <a href="./books.html"> <button>Browse</button>
+                </a>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Technology</h3>
+                <a href="./books.html"><button>Browse</button></a>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-heart"></i>
+                <h3>Romance</h3>
+                <a href="./books.html"><button>Browse</button></a>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-brain"></i>
+                <h3>Self-Development</h3>
+                <a href="./books.html"><button>Browse</button></a>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Business</h3>
+                <a href="./books.html"><button>Browse</button></a>
+            </div>
+            <div class="category-card">
+                <i class="fas fa-user"></i>
+                <h3>Biography</h3>
+                <a href="./books.html"><button>Browse</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <h2 class="user-t">User testimonials</h2>
+        <div class="reviews">
+            <div class="box">
+                <img class="man" src="./img/man.jpg">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="rev">The library website is simple, well-organized, and makes finding books very easy.</p>
+                <h3 class="pname">Metthew Bennett</h3>
+            </div>
+            <div class="box">
+                <img class="man" src="./img/man.jpg">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="rev">The library website is simple, well-organized, and makes finding books very easy.</p>
+                <h3 class="pname">Metthew Bennett</h3>
+            </div>
+            <div class="box">
+                <img class="man" src="./img/man.jpg">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="rev">The library website is simple, well-organized, and makes finding books very easy.</p>
+                <h3 class="pname">Metthew Bennett</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-text">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Fill out the form or reach us through the details below</p>
+        </div>
+        <div class="contact-container">
+            <div class="form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contact-icons">
+                <h3>Elsewhere</h3>
+                <ul>
+                    <li>
+                        <a href="#contact">
+                            <i class="fa-brands fa-linkedin"></i> Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fa-brands fa-square-facebook"></i> Facebook
+                        </a>
+                    </li>
+
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#contact">
+                            <i class="fa-solid fa-envelope"></i> E-mail
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            <i class="fa-brands fa-square-instagram"></i>Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">Special Deals</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog & Articles</a></li>
+                    <li><a href="#">Term and Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>contact</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-envelope"></i> books@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> 01067343899</li>
+                    <li><i class="fas fa-phone"></i> 01067343899</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© books@gmail.com</p>
+        </div>
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

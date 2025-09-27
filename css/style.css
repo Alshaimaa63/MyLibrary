@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    position: relative;
+    text-decoration-line: none;
+    list-style-type: none;
+}
+:root {
+    --bg: #FDF6EC;
+    --card-bg: #FFF8F0;
+    --primary: #4B2E2E;
+    --button: #6B8E23;
+    --button-hover: #556B2F;
+    --text: #333333;
+    --border: #E5D5C5;
+} 
+
+.body {
+    min-height: 100svh;
+    max-width: 100svw;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url(../img/sign-in.jpg) no-repeat center center/cover;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.signin-container {
+    position: relative;
+    background: rgba(255, 248, 240, 0.95);
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.signin-container h1 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.signin-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+.signin-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: var(--button);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.signin-container button:hover {
+    background: var(--button-hover);
+}
+
+.extra-links {
+    margin-top: 15px;
+    font-size: 0.85rem;
+}
+
+.extra-links a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+.extra-links p{
+    margin: 10px 0;
+}
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 430px) {
+    .signin-container {
+        padding: 20px 15px;
+        max-width: 95%;
+    }
+
+    .signin-container h1 {
+        font-size: 1.4rem;
+    }
+
+    .signin-container input,
+    .signin-container button {
+        font-size: 0.9rem;
+    }
+}

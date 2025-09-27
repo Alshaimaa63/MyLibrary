@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/sign-up.css">
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <div class="body">
+    <div class="signup-container">
+      <h1>Sign Up</h1>
+      <form onsubmit="event.preventDefault(); window.location.href='./index.html';">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <a href="./index.html"><button type="submit">Create Account</button></a>
+      </form>
+      <div class="extra-links">
+        <p>Already have an account? <a href="./index.html">Sign In</a></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
