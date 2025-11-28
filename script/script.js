@@ -1,7 +1,7 @@
 const container = document.getElementById("booksGrid");
 const title = document.getElementById("category-title");
 let currentBooks = []; 
-
+// 
 function loadBooks(category) {
     title.textContent = `${category.charAt(0).toUpperCase() + category.slice(1)} Books Collection`;
     container.innerHTML = "<p>Loading books...</p>";
