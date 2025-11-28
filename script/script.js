@@ -1,6 +1,6 @@
 const container = document.getElementById("booksGrid");
 const title = document.getElementById("category-title");
-let currentBooks = []; // نخزن الكتب المعروضة هنا علشان نستخدمها في السيرش
+let currentBooks = []; 
 
 function loadBooks(category) {
     title.textContent = `${category.charAt(0).toUpperCase() + category.slice(1)} Books Collection`;
@@ -10,7 +10,7 @@ function loadBooks(category) {
         .then(res => res.json())
         .then(data => {
             container.innerHTML = "";
-            currentBooks = data.docs.slice(0, 8); // نخزن الكتب اللي جبناها
+            currentBooks = data.docs.slice(0, 8); 
             if (currentBooks.length === 0) {
                 container.innerHTML = "<p>No books found.</p>";
                 return;
